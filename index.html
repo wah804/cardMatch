@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Card Match - A fun memory matching card game">
+  <title>Card Match Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/normalize.css">
+  <link rel="stylesheet" href="dist/styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <div class="game-info">
+        <h1 class="game-title">Card Match</h1>
+        <p class="game-instructions">Use the three attempts you have to try to find the three matching pairs of cards.</p>
+      </div>
+      <div class="attempts-display">
+        Attempts left: <span id="attempts-count">3</span>
+      </div>
+    </header>
+
+    <main class="game-board">
+      <div class="cards-grid" id="cards-grid">
+        <!-- Cards will be dynamically generated here -->
+      </div>
+
+      <div class="game-message" id="game-message">
+        <span id="message-text"></span>
+      </div>
+
+      <button type="button" class="start-over-btn" id="start-over-btn">Start Over!</button>
+    </main>
+  </div>
+
+  <script src="dist/game.js"></script>
+</body>
+</html>
