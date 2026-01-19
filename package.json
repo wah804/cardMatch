@@ -6,7 +6,7 @@
     "start": "npm run build && start index.html",
     "build:ts": "tsc",
     "build:scss": "sass src/styles.scss dist/styles.css",
-    "build": "npm run build:ts && npm run build:scss",
+    "build": "npm run build:ts && npm run build:scss && cp src/normalize.css dist/normalize.css",
     "watch:ts": "tsc --watch",
     "watch:scss": "sass --watch src/styles.scss dist/styles.css",
     "dev": "npm run build && concurrently \"npm run watch:ts\" \"npm run watch:scss\""
